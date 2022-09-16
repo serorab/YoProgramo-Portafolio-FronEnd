@@ -1,0 +1,41 @@
+.row{
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes{
+    margin-right: 1em;
+}
+#Logo-AP{
+    width: 150px;
+}
+#Logo-Ar{
+    width: 300px;
+}
+img{
+    width: 50px;
+}
+.logos{
+    padding: 5px;
+}
+.btn{
+    border-width: medium;
+    margin-left: .5em;
+}
+
+/*--Para la vista de celular--*/
+
+@media(max-width:575px){
+    .container{
+        flex-direction: column;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

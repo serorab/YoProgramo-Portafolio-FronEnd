@@ -1,0 +1,31 @@
+.row{
+    padding: 20px;
+    box-shadow: 2px -2px 5px #999;
+}
+.contenedor-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    background: #eef5f9;
+}
+
+.content-foo{
+    text-align: center;
+}
+.content-foo h4{
+    color: rgb(69, 66, 66);
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+    cursor: pointer;
+    
+}
