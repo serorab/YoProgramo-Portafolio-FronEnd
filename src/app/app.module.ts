@@ -15,6 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SeccionesComponent } from './components/secciones/secciones.component';
 import { Routes } from '@angular/router';
 
+
 const routes: Routes = [
 ];
 
