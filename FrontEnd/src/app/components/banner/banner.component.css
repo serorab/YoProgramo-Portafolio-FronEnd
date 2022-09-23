@@ -1,0 +1,32 @@
+.caja{
+    position: relative;
+    display: inline-block;
+}
+.texto1{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 60px;
+    color: #eef5f9;
+}
+
+.texto2{
+    position: absolute;
+    top: 230px;
+    left: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #eef5f9;
+}
+.texto3{
+    position: absolute;
+    top: 350px;
+    left: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: #fee566;
+}
+
+
+
