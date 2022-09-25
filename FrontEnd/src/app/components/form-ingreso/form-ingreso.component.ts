@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms'
+import { FormGroup, FormBuilder, FormControl, Validators} from '@angular/forms'
 import { debounceTime } from 'rxjs';
-
 
 @Component({
   selector: 'app-form-ingreso',
@@ -12,7 +11,6 @@ import { debounceTime } from 'rxjs';
 export class FormIngresoComponent implements OnInit {
 
   form: FormGroup;
-
 
   constructor(
     private router: Router,

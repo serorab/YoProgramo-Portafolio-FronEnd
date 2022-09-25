@@ -15,8 +15,9 @@ export class LogoAPComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  ingreso(){
-    this.router.navigate(['/form-ingreso'])
+  
+  login(){
+    this.router.navigate(['/login'])
   }
 
 }

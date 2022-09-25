@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -14,10 +14,13 @@ import { HskComponent } from './components/hsk/hsk.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SeccionesComponent } from './components/secciones/secciones.component';
-import { Routes } from '@angular/router';
+import { Router, Routes } from '@angular/router';
 import { FormIngresoComponent } from './components/form-ingreso/form-ingreso.component';
-import { RutasModule } from './rutas/rutas.module';
-import { RouterModule } from '@angular/router';
+
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { RoutingRoutingModule } from './routing/routing-routing.module';
+
 
 const routes: Routes = [
 ];
@@ -35,13 +38,15 @@ const routes: Routes = [
     ProyectoComponent,
     FooterComponent,
     SeccionesComponent,
-    FormIngresoComponent,  
+    FormIngresoComponent,
+    HomeComponent,
+    LoginComponent,  
   ],
   imports: [
     BrowserModule,
-    RutasModule,
-    RouterModule,
     ReactiveFormsModule,
+    RoutingRoutingModule,
+    FormsModule,
     NgCircleProgressModule.forRoot({})
   ],
   providers: [],
