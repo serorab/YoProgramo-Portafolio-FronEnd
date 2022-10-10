@@ -1,23 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, FormControl, Validators} from '@angular/forms';
-import { debounceTime } from 'rxjs';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-registro',
+  templateUrl: './registro.component.html',
+  styleUrls: ['./registro.component.css']
 })
-export class LoginComponent implements OnInit {
+export class RegistroComponent implements OnInit {
 
   form: FormGroup;
-
+  
   constructor(
     private formBuilder: FormBuilder,
     private router: Router){ 
+   
     this.form= this.formBuilder.group({
       name: ['',[Validators.required, Validators.min(5), Validators.max(12)]],
       password:['',[Validators.required, Validators.minLength(8)]],
+      rpassword:['', [Validators.required,Validators.minLength(8)]],
       email:['', [Validators.required, Validators.email]],
    })
   }
@@ -29,6 +30,10 @@ export class LoginComponent implements OnInit {
 
   get Password(){
     return this.form.get("password");
+  }
+
+  get Rpassword(){
+    return this.form.get("rpassword");
   }
  
   get Mail(){
@@ -43,12 +48,16 @@ export class LoginComponent implements OnInit {
     return this.Password?.touched && !this.Password?.valid;
   }
 
+  get RpasswordValid(){
+    return this.Rpassword?.touched && !this.Rpassword?.valid;
+  }
+
   get MailValid() {
     return false
   }
  
 
-  onEnviar(event: Event){
+  onSubmit(event: Event){
     event.preventDefault; 
  
     if (this.form.valid){
@@ -59,8 +68,8 @@ export class LoginComponent implements OnInit {
  
   }
 
-  Registro(){
-    this.router.navigate(['/registro'])
+  inicio(){
+    this.router.navigate(['']);
   }
 
 

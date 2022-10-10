@@ -20,6 +20,7 @@ import { FormIngresoComponent } from './components/form-ingreso/form-ingreso.com
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { RoutingRoutingModule } from './routing/routing-routing.module';
+import { RegistroComponent } from './components/registro/registro.component';
 
 
 const routes: Routes = [
@@ -40,7 +41,8 @@ const routes: Routes = [
     SeccionesComponent,
     FormIngresoComponent,
     HomeComponent,
-    LoginComponent,  
+    LoginComponent,
+    RegistroComponent,  
   ],
   imports: [
     BrowserModule,

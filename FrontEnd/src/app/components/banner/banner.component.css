@@ -28,5 +28,21 @@
     color: #fee566;
 }
 
+@media(max-width: 881px){
+    .texto3{
+        position: absolute;
+        top: 380px;
+    }
+    img{
+        min-width: 100%;
+    }
 
+}
 
+@media(max-width: 733px){
+    .texto3{
+        position: absolute;
+        top: 400px;
+    }
+
+}
