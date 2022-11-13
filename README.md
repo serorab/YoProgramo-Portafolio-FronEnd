@@ -1,3 +1,3 @@
 # YoProgramo-Portafolio-FronEnd
 
-Proyecto para el curso YoProgramo usando Angular.
+Proyecto para el curso YoProgramo. Está realizado en Angular.
